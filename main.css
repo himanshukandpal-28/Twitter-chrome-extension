@@ -1,0 +1,201 @@
+.trive__buttons {
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+  /* height: 40px; */
+  text-align: left;
+  background-color: transparent;
+  border-radius: 5px;
+  border-color: transparent;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.trive__button {
+  display: inline-block;
+  text-align: center;
+  /* width: 100px; */
+  color: rgb(29, 155, 240);
+  font-size: 14px;
+  background: none;
+  border: 1px solid rgb(29, 155, 240);
+  margin-right: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.trive__text__div {
+  display: flex;
+  align-items: center;
+}
+
+.trive__button__refresh {
+  height: 4px;
+  display: block;
+  text-align: right;
+  margin-left: 20px;
+  color: rgb(29, 155, 240);
+  font-size: 12px;
+  background: none;
+  cursor: pointer;
+  border: unset;
+}
+
+.trive__text {
+  font-size: 14px;
+  color: rgb(29, 155, 240);
+  margin-top: 10px;
+  font-family: "TwitterChirp",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.trive__text__price {
+  margin-left: 15px;
+}
+
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  top: 50%;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.triveLoader{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: #000;
+  opacity: 0.75;
+}
+
+/* .trive__button:enabled svg{
+  display: none;
+} */
+
+.trive__button svg{
+  display: none;
+}
+
+
+.trive__button:enabled span{
+  display: block;
+}
+
+/* .trive__button:disabled svg{
+  width: 20px;
+  height: 20px;
+  display:inline-block;
+}
+
+.trive__button:disabled span{
+  display: none;
+} */
+
+.trive__button.loading:disabled svg{
+  width: 20px;
+  height: 20px;
+  display:inline-block;
+}
+
+.trive__button.loading:disabled span{
+  display: none;
+}
+
+.trive__button:disabled {
+  color: rgb(125, 125, 125);
+  border: 1px solid rgb(125, 125, 125);
+  cursor: unset;
+}
+
+.tribeforce__popup {
+  height: 300px;
+  width: 300px;
+}
+

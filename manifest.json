@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+  "name": "Tribeforce Twitter",
+  "description": "Tribeforce Twitter Extension",
+  "version": "0.944",
+  "icons": {
+    "16": "logo.png",
+    "32": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "main.css"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "webNavigation",
+    "tabs",
+    "identity",
+    "identity.email",
+    "storage",
+    "unlimitedStorage",
+    "cookies"
+  ],
+  "host_permissions": [
+    "https://twitter.com/*",
+    "https://tribeforce.ai/*",
+    "http://localhost:3000/*",
+    "http://localhost:3000/auth",
+    "http://localhost:8000/*",
+    "https://*.google.com/"
+  ],
+  "oauth2": {
+    "client_id": "30067437838-jcio44dvvnm5mi4jdts11nehgv2vhnab.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/userinfo.email",
+      "https://www.googleapis.com/auth/contacts.readonly"
+    ]
+  }
+}
